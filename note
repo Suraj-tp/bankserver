@@ -1,0 +1,90 @@
+
+
+
+                    Node/Express-Server/Back End Technology
+
+    Basic Commands
+    ----------------
+                
+    1.create package.json file-->npm init
+
+    2.To install Express-->npm i express  (i==install)
+
+    3.install JWT Token-->npm i jsonwebtoken
+
+
+    Basic Steps
+    ------------
+
+    1.create package.json file
+
+    2.Install the framework used to create the server ,ie Express
+
+    3.create index.js file (this is the entry point of the bank application)
+
+    4.import express
+
+    5.using this express we create server application
+                
+    6.set up the port number to the server app
+    
+    7.Resolving the user/client requests-which is in the form of HTTP request
+
+        HTTP requests are-->GET,PUT,POST,PATCH,DELETE
+
+        solving the requests by
+
+            syntax:-server-app.http request(path,callback function)
+
+            how to resolve the http request will be defined in the call back function
+            Also all call back functions as well as functions in node will be arrow functions
+
+    8.Resposne status code(response will be sent from server to client)
+
+        1xx(100 series code)--type of response-->information responses
+
+        2xx(200 series code)-->type of response-->successful rsesponses
+
+        3xx(300 series code)--type of response-->Redirection messages
+
+        4xx(400 series code)--type of response-->client side error responses
+
+        5xx(500 series code)--type of response-->server side error responses
+
+        Refer to--> https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+    9.JWT Token--JSON web token--used for user validation(whether the request is valid or not)
+
+        9.1)2 steps is there
+          
+          1)Generate the token-->method used by the library to generate token is sign()
+
+              For that we need to install the library that helps us to generate the token
+
+          2)verify the token-->method used by the library to verify token is verify()
+
+    10.Middleware- it is just like a software,before processing the request of clients ,if we need to perform any 
+    
+                   tasks like security checks we use middlewares.
+
+                   so before processing the requests ,middleware will be processed,it acts like a function.
+
+                   There will be 3 arguments=>requests,response,next
+
+            10.1 creating middleware in 2 types
+
+                10.1.1 Entire application specific(entire application goes through this middleware)
+                
+                10.1.2 Router specific(for certain APIs)
+
+    
+        
+
+
+
+
+    My Notes
+    ----------
+    node modules--to keep the copy of third party modules
+
+    JWT Token--JSON web token
